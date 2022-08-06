@@ -1,11 +1,11 @@
 let handler = async (m, { conn, usedPrefix }) => conn.sendButton(m.chat, `
 ╭─「 Donasi • Dana 」
-│ • indosat [085779150501]
-│ • Dana  [085779150501]
-│ • Saweria  [https://saweria.co/ranggabot123]
+│ • indosat [089516947204]
+│ • Dana  [089516947204]
+│ • Saweria  [https://saweria.co/IyanMd]
 ╰────
 ╭─「 *NOTE* 」
-│ > Ingin donasi? Wa.me/6285779150501
+│ > Ingin donasi? Wa.me/6289516947204
 │ _Hasil donasi akan digunakan buat sewa_
 │ _atau beli *RDP/VPS* agar bot bisa jalan_
 │ _24jam tanpa kendala_
