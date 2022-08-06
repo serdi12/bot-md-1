@@ -29,35 +29,19 @@ handler.all = async function (m) {
 `.trim(), wm, 'Pemilik Bot', '.owner', m)
     }
 
-    if (m.isGroup) {
+// salam
+    let reg = /(kntl?anj|bct)/i
+    let badword = reg.exec(m.text)
+    if (badword && !m.fromMe) {
+        m.reply(`وَعَلَيْكُمْ السَّلاَمُ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ\n_wa\'jangan toxic kak_`)
+    }
+    
+if (m.isGroup) {
     if (m.fromMe) return
     if (m.mentionedJid.includes(this.user.jid) && m.isGroup) {
     	await this.send2Button(m.chat, m.msg.contextInfo.expiration == 604800 ? '\n\nketik *.ephe* untuk matiin pesan sementaranya, biar tombolnya bisa dipake' : 'uhm.. iya ada apa?', wm, `${isBanned ? 'UNBAN' : 'MENU'}`, `${isBanned ? '.unban' : '.?'}`, `${!m.isGroup ? 'DONASI' : isBanned ? 'UNBAN' : 'BAN'}`, `${!m.isGroup ? '.donasi' : isBanned ? '.unban' : '.ban'}`, m)
     }
 }
-
-//Reply kata kata kotor
-    let textfilter = m.text.toLowerCase()
-    let isBadword = listkatakotor.exec(textfilter)
-    if (isBadword && !m.fromMe) {
-        let gabolekasar = `gabole kasar kk\n
- لَا يُحِبُّ اللّٰهُ الْجَهْرَ بِالسُّوْۤءِ مِنَ الْقَوْلِ اِلَّا مَنْ ظُلِمَ ۗ وَكَانَ اللّٰهُ سَمِيْعًا عَلِيْمًا
-
-Allah tidak menyukai perkataan buruk, (yang diucapkan) secara terus terang kecuali oleh orang yang dizalimi. Dan Allah Maha Mendengar, Maha Mengetahui. [Q.S An-Nisa': 148]`
-            this.sendButton(m.chat, gabolekasar.trim(), wm, 'Menu', '.menu', m)
-        let who
-        if (!m.isGroup) who = m.sender
-        else {
-            who = m.sender
-        }
-        let text = `${iklanOwner}
-
-IKLAN KARENA @${await m.sender.replace(/@.+/, '')} BERKATA KASAR`.trim()
-        let saha = [who]
-        let mentionedJid = saha.concat(m.mentionedJid)
-        await conn.reply(m.chat, text , m, { contextInfo: { mentionedJid } })
-        
-    }
     
     if (/^bot$/i.test(m.text)) {
         await this.sendButton(m.chat, !(m.isGroup || m.isPrems) && group ? 'hanya grup' : isBanned ? 'chat banned' : banned ? 'user banned' : 'aktif', wm, !(m.isGroup || m.isPrems) && group ? 'donasi' : isBanned ? 'unban' : banned ? 'minta owner kalo mau di unban' : 'donasi', !(m.isGroup || m.isPrems) && group ? '.donasi' : isBanned ? '.unban' : banned ? '.owner' : '.donasi', m)
