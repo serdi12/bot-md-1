@@ -9,11 +9,11 @@ let handler = async (m, { conn }) => {
 ┌「 *Sewa bot* 」
 │     
 ├ 1 Grup / 30 Hari
-├ Rp. 10,000 Gopay
+├ Rp. 10,000 Dana
 ├ Rp. 15,000 Pulsa Indosat
 │
 ├ 1 Premium / 30 Hari
-├ Rp. 5,000 Gopay
+├ Rp. 5,000 Dana
 ├ Rp. 10,000 Pulsa Indosat
 │
 ├ tertarik? hubungi: 
