@@ -4,8 +4,8 @@ global.mods = JSON.parse(fs.readFileSync('./src/moderator.json')) // Want some h
 global.thumbt = global.img
 global.fsx = 999999999999
 global.kontak = [
-['6285779150501', 'RANGGA.𝚂𝚊𝚍.𝙱𝚘𝚢𝟶𝟷', true],
-['6289512630591', 'Hanz-MD ⁴⁰⁴-ﾉ [BOT MD]', true]
+['6289516947204', '𝚒𝚢𝚊𝚗.𝚂𝚊𝚍.𝙱𝚘𝚢𝟶𝟷', true],
+['6289516947204', '𝚒𝚢𝚊𝚗-MD ⁴⁰⁴-ﾉ [BOT MD]', true]
 ]
 global.APIs = { // API Prefix
   // name: 'https://website'
@@ -34,23 +34,23 @@ global.APIKeys = { // APIKey Here
   'https://leyscoders-api.herokuapp.com': 'dappakntlll'
 }
 
-global.WM = '𝑴𝒚𝑩𝒐𝒕-𝑴𝒖𝒍𝒕𝒊 𝑫𝒆𝒗𝒊𝒄𝒆 𝑩𝒚 Rangga.𝚂𝚊𝚍.𝙱𝚘𝚢𝟶𝟷'
-global.linkgc = 'https://chat.whatsapp.com/JCgXlfkzK6p6xIYk5ij0Pa'
-global.linkig = 'https://www.instagram.com/rangga_botz'
+global.WM = '𝑴𝒚𝑩𝒐𝒕-𝑴𝒖𝒍𝒕𝒊 𝑫𝒆𝒗𝒊𝒄𝒆 𝑩𝒚 𝚒𝚢𝚊𝚗.𝚂𝚊𝚍.𝙱𝚘𝚢𝟶𝟷'
+global.linkgc = 'https://saweria.co/IyanMd'
+global.linkig = 'https://saweria.co/IyanMd'
 global.deslink = ''
 global.titlink = 'Folllow me on Instagram'
-global.bodlink = '@rangga_botz'
+global.bodlink = '@𝚒𝚢𝚊𝚗_botz'
 
 global.wait = '_*𝐬𝐞𝐝𝐚𝐧𝐠 𝐝𝐢 𝐩𝐫𝐨𝐬𝐞𝐬 ...*_'
 global.eror = '_*мααƒ ѕєяνєя тι∂αк ѕтαвιℓ..*_'
 
 //========Url Template Buttons==========//
 global.dtu = '𝑭𝒐𝒍𝒍𝒐𝒘'
-global.urlnya = "https://www.instagram.com/rangga_botz"
+global.urlnya = "https://saweria.co/IyanMd"
 
 //============= callButtons ============//
 global.dtc = '𝒄𝒂𝒍𝒍 𝒐𝒘𝒏𝒆𝒓'
-global.phn = '+62 895-1263-0591'
+global.phn = '+62-895-1694-7204'
 
 //========== Tampilan Bot =============//
 global.sa = '╭─'
